@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myFormatTime</title>
+</head>
+<body>
+    
+    <script src="../lee61011-tools.js"></script>
+
+    <script>
+        
+        var str = '2019-01-01';
+        console.log( str.myFormatTime() );	                //	"2019年01月01日 00时00分00秒"
+
+        console.log( str.myFormatTime('{1}-{2} {3}:{4}') );	//	"01-01 00:00"
+        
+        var str = '2019-01-01 13:28:32';
+        console.log( str.myFormatTime('{3}:{4}:{5}') );		//	"13:28:32"
+
+    </script>
+
+</body>
+</html>
